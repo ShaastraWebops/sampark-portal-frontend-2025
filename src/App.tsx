@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="App min-h-screen flex flex-col justify-between">
+    <div className="App min-h-screen flex flex-col justify-between bg-[#7DF9FF]">
       <Navbar/>
      <Home/>
      <Subhead/>
