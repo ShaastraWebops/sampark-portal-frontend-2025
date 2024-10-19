@@ -7,10 +7,34 @@ import Container2 from './Components/Container2';
 import Container3 from './Components/Container3';
 import Container4 from './Components/Container4';
 import Footer from './Components/Footer';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
 const App: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const element = sectionRef.current;
+
+    gsap.fromTo(
+      element,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+  }, []);
   return (
-    <div className="App min-h-screen flex flex-col justify-between bg-[#7DF9FF]">
+    <div className="App min-h-screen flex flex-col justify-between">
       <Navbar/>
      <Home/>
      <Subhead/>
