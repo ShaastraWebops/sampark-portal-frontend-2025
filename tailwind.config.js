@@ -25,7 +25,6 @@ export default {
         bounceTwice: 'bounceTwice 2s ease-in-out 1, none 4s',
       },
     },
-    
   },
   plugins: [
     function ({ addUtilities }) {
