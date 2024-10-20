@@ -21,17 +21,17 @@ const Footer: React.FC = () => {
             <li>
               <p className="font-semibold">Thrupthi</p>
               <p>Outreach Head, Shaastra</p>
-              <p className="text-blue-400">+91 7975016134</p>
+              <a href="tel:+917975016134" className="text-blue-400">+91 7975016134</a>
             </li>
             <li>
               <p className="font-semibold">Vansh</p>
               <p>Publicity Coordinator, Shaastra</p>
-              <p className="text-blue-400">+91 7404769417</p>
+              <a href="tel:+917404769417"className="text-blue-400">+91 7404769417</a>
             </li>
             <li>
               <p className="font-semibold">Roshan</p>
               <p>Publicity Coordinator, Shaastra</p>
-              <p className="text-blue-400">+91 9156450775</p>
+              <a href="tel:+919156450775" className="text-blue-400">+91 9156450775</a>
             </li>
           </ul>
         </div>
@@ -63,16 +63,27 @@ const Footer: React.FC = () => {
           </div> */}
 
           <div className="flex space-x-4 mt-20">
-            <a href="#" aria-label="Facebook" className="hover:text-blue-500 transition-colors duration-300">
+            <a href="#" aria-label="Facebook" className="hover:text-blue-500 transition-colors duration-300"onClick={() =>
+            window.open("https://www.facebook.com/Shaastra/")
+          }>
               <i className="fab fa-facebook text-5xl"></i>
+              
             </a>
-            <a href="#" aria-label="Instagram" className="hover:text-pink-500 transition-colors duration-300">
+            <a href="#" aria-label="Instagram" className="hover:text-pink-500 transition-colors duration-300" onClick={() =>
+            window.open("https://www.instagram.com/shaastra_iitm/")
+          }>
               <i className="fab fa-instagram text-5xl"></i>
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-blue-700 transition-colors duration-300">
+            <a href="#" aria-label="LinkedIn" className="hover:text-blue-700 transition-colors duration-300"onClick={() =>
+            window.open("https://in.linkedin.com/company/shaastra-iit-madras")
+          }>
               <i className="fab fa-linkedin text-5xl"></i>
             </a>
-            <a href="#" aria-label="YouTube" className="hover:text-red-600 transition-colors duration-300">
+            <a href="#" aria-label="YouTube" className="hover:text-red-600 transition-colors duration-300"onClick={() =>
+            window.open(
+              "https://www.youtube.com/channel/UCgY2ugmW-BV2nMRFu-0qPZA"
+            )
+          }>
               <i className="fab fa-youtube text-5xl"></i>
             </a>
           </div>
