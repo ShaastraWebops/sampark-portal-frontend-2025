@@ -24,10 +24,10 @@ const Home: React.FC = () => {
             suppressContentEditableWarning
             className="relative block outline-none"
           >
-            Get Ahead Of<br /> The Competition
+            Get Ahead Of<br/>The Competition
           </span>
         </h1>
-        <div className="border h-1/12 w-1/12 mt-6 rounded-full border-black p-2">
+        <div className="border h-1/12 w-1/12 mt-6 rounded-full border-black p-2 hidden md:block">
           <div className='animate-bounceTwice'>
             <a className='hover:cursor-pointer' onClick={() => scrollToSection('subhead')}>
               <img className="arrow" src={arrow} alt="arrow" />
