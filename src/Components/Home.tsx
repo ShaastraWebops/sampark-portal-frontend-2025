@@ -1,24 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import arrow from '../assets/arrow.svg'; // Adjust the import path as necessary
+import './home.scss';
 
-const MyComponent: React.FC = () => {
+const Home: React.FC = () => {
+  const [heading, setHeading] = useState('Get Ahead Of The Competition');
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div id="c1" className="flex justify-center items-center h-screen w-full relative">
-      <div className="flex flex-col w-full items-center">
+      <div className="flex flex-col w-full items-center text-center">       
         <h1
-          className="text-7xl text-center font-arial-black font-bold relative .div1"
-          title="Get Ahead Of The Competition"
+          data-heading={heading}
+          className="relative text-5xl md:text-8xl uppercase font-normal m-0"
         >
-          Get Ahead Of<br /> The Competition
-          <span className="absolute top-0 left-0 w-full h-full text-7xl font-arial-black font-bold animate-glitchTop clip-top" />
-          <span className="absolute top-0 left-0 w-full h-full text-7xl font-arial-black font-bold animate-glitchBottom clip-bottom" />
+          <span
+            data-heading={heading}
+            suppressContentEditableWarning
+            className="relative block outline-none"
+          >
+            Get Ahead Of<br /> The Competition
+          </span>
         </h1>
         <div className="border h-1/12 w-1/12 mt-6 rounded-full border-black p-2">
-          <img className="arrow animate-bounceTwice" src={arrow} alt="arrow" />
+          <div className='animate-bounceTwice'>
+            <a className='hover:cursor-pointer' onClick={() => scrollToSection('subhead')}>
+              <img className="arrow" src={arrow} alt="arrow" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default MyComponent;
+export default Home;

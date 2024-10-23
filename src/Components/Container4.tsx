@@ -26,19 +26,19 @@ const Container4: React.FC = () => {
     );
   }, []);
     return(<div id="c5" className="w-full p-8">
-        <div className="w-5/6" ref={sectionRef}>
-        <h2 className="text-4xl font-bold">Be a Campus Ambassador.<br/>
-Empower your voice and Lead the way!<br/>
-Why CA?</h2>
-        <ol className="mt-5 text-2xl font-semibold leading-10">
+        <div className="w-full md:w-5/6" ref={sectionRef}>
+        <h2 className="text-2xl md:text-4xl font-bold">Be a Campus Ambassador<br/>
+Empower your voice and Lead the way!<br/><br/>
+</h2><h2 className='text-xl md:text-3xl font-bold'>Why CA?</h2>
+        <ol className="mt-5 text-lg md:text-2xl md:leading-10 leading-7 font-semibold">
         <li>Sponsored internships for the top 30 CAs.</li>
         <li>Internship certificates to CAs crossing specific threshold points</li>
         <li>Premium Shaastra merchandise and goodies for CAs</li>
         <li>Upskill workshops for CAs</li>
         <li>Earn Shaastra Credits in the Shaastra Grand Championship and use them in Shaastra-2024</li>
         </ol>
-        <h2 className="text-4xl font-bold mt-6">Roles and Responsibilities</h2>
-        <ol className="mt-4 text-2xl font-semibold leading-10">
+        <h2 className="text-xl md:text-3xl font-bold mt-6">Roles and Responsibilities</h2>
+        <ol className="mt-5 text-lg md:text-2xl md:leading-10 font-semibold leading-7">
         <li>You will be THE FACE OF SHAASTRA on your campus</li>
         <li>Internship certificates to CAs crossing specific threshold points</li>
         <li>Finding innovative and effective social media strategies to help Shaastra find the targeted audience</li>

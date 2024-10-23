@@ -14,18 +14,19 @@ export default {
       },
       keyframes: {
         bounceTwice: {
-          '0%': { transform: 'translateY(0)' },
-          '25%': { transform: 'translateY(-10%)' },
+          '0%, 100%': { transform: 'translateY(0)' },
+          '25%': { transform: 'translateY(-15px)' },
           '50%': { transform: 'translateY(0)' },
-          '75%': { transform: 'translateY(-10%)' },
-          '100%': { transform: 'translateY(0)' },
+          '75%': { transform: 'translateY(-15px)' },
+        },
+        pause: {
+          '0%, 100%': { transform: 'translateY(0)' },
         },
       },
       animation: {
-        bounceTwice: 'bounceTwice 2s ease-in-out 1, none 4s',
+        bounceTwice: 'bounceTwice 2s ease-in-out infinite',
       },
     },
-    
   },
   plugins: [
     function ({ addUtilities }) {

@@ -35,7 +35,7 @@ const App: React.FC = () => {
     );
   }, []);
   return (
-    <div className="App min-h-screen flex flex-col justify-between">
+    <div className="App min-h-screen flex flex-col justify-between bg-[#40E0D0]">
       <Navbar/>
      <Home/>
      <Subhead/>
