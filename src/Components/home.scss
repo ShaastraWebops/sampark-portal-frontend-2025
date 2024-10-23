@@ -35,6 +35,15 @@ $shadow2: #cbc7e3;
 h1 {
     font-family: 'Rig Bold Face', sans-serif;
     color: #0b4b73;
+    font-size: 4vw;
+
+    @media (max-width: 768px) {
+        font-size: 4vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 5vw;
+    }
 }
 
 h1::before,

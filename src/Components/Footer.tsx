@@ -2,13 +2,13 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-gradient-to-r from-blue-900 via-gray-900 to-black text-white pb-10 mt-10">
+    <footer className="relative bg-[#0a1128] text-white pb-10 mt-10">
    
       <div className="container mx-auto px-5 flex flex-col md:flex-row justify-between mt-12">
         
         <div className="mb-8 md:mb-0">
           <h3 className="text-orange-400 font-bold mb-3 text-2xl">Developers</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 md:text-xl">
             <li>Mogith Guru</li>
             <li>Pranav Ram</li>
             <li>Sathwik</li>
@@ -19,17 +19,17 @@ const Footer: React.FC = () => {
           <h3 className="text-orange-400 font-bold mb-3 text-2xl">Contact Us</h3>
           <ul className="space-y-3">
             <li>
-              <p className="font-semibold">Thrupthi</p>
+              <p className="font-semibold md:text-xl">Thrupthi</p>
               <p>Outreach Head, Shaastra</p>
               <a href="tel:+917975016134" className="text-blue-400">+91 7975016134</a>
             </li>
             <li>
-              <p className="font-semibold">Vansh</p>
+              <p className="font-semibold md:text-xl">Vansh</p>
               <p>Publicity Coordinator, Shaastra</p>
               <a href="tel:+917404769417"className="text-blue-400">+91 7404769417</a>
             </li>
             <li>
-              <p className="font-semibold">Roshan</p>
+              <p className="font-semibold md:text-xl">Roshan</p>
               <p>Publicity Coordinator, Shaastra</p>
               <a href="tel:+919156450775" className="text-blue-400">+91 9156450775</a>
             </li>

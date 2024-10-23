@@ -2,13 +2,8 @@ import React, { useState } from 'react';
 import arrow from '../assets/arrow.svg'; // Adjust the import path as necessary
 import './home.scss';
 
-const MyComponent: React.FC = () => {
+const Home: React.FC = () => {
   const [heading, setHeading] = useState('Get Ahead Of The Competition');
-
-  const handleInput = (event: React.FormEvent<HTMLSpanElement>) => {
-    const text = event.currentTarget.innerText;
-    setHeading(text);
-  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -19,16 +14,14 @@ const MyComponent: React.FC = () => {
 
   return (
     <div id="c1" className="flex justify-center items-center h-screen w-full relative">
-      <div className="flex flex-col w-full items-center">       
+      <div className="flex flex-col w-full items-center text-center">       
         <h1
           data-heading={heading}
-          className="relative text-8xl uppercase font-normal text-center m-0"
+          className="relative text-5xl md:text-8xl uppercase font-normal m-0"
         >
           <span
             data-heading={heading}
-            contentEditable
             suppressContentEditableWarning
-            onInput={handleInput}
             className="relative block outline-none"
           >
             Get Ahead Of<br /> The Competition
@@ -46,4 +39,4 @@ const MyComponent: React.FC = () => {
   );
 };
 
-export default MyComponent;
+export default Home;
