@@ -1,0 +1,71 @@
+/* Glitching Text Effect */
+@keyframes glitch {
+    0% {
+      color: white;
+      transform: translate(0, 0);
+    }
+    10% {
+      color: #ff00c1;
+      transform: translate(2px, -2px);
+    }
+    20% {
+      color: #00fff3;
+      transform: translate(-2px, 2px);
+    }
+    30% {
+      color: white;
+      transform: translate(0, 0);
+    }
+    40% {
+      color: #ff00c1;
+      transform: translate(-2px, 2px);
+    }
+    50% {
+      color: #00fff3;
+      transform: translate(2px, -2px);
+    }
+    60%, 100% {
+      color: white;
+      transform: translate(0, 0);
+    }
+  }
+  
+  .glitch-text {
+    position: relative;
+    animation: glitch 3s infinite;
+  }
+  
+  .clip-top {
+    clip-path: inset(0 0 50% 0);
+  }
+  
+  .clip-bottom {
+    clip-path: inset(50% 0 0 0);
+  }
+  
+  /* Arrow Bounce Animation */
+  @keyframes bounceTwice {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-7px);
+    }
+  }
+  
+  .animate-bounceTwice {
+    animation: bounceTwice 3s infinite;
+  }
+  
+  /* Make the glitch colors stand out */
+  .glitch-text span {
+    color: transparent;
+    animation: glitch 3s infinite;
+  }
+  
