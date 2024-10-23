@@ -1,6 +1,30 @@
 .div1{
     animation: glitch 1s linear infinite;
   }
+
+  /* Hover underline animation */
+.nav-link {
+  position: relative;
+  padding-bottom: 5px; /* Add space for the underline */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background-color: #ffffff; /* Underline color */
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Full-width underline on hover */
+}
+
   
   @keyframes glitch{
     2%,64%{

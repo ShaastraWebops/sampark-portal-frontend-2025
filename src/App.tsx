@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Slideshow from './Components/Slideshow.tsx';
 
 gsap.registerPlugin(ScrollTrigger);
 const App: React.FC = () => {
@@ -38,6 +39,7 @@ const App: React.FC = () => {
       <Navbar/>
      <Home/>
      <Subhead/>
+     <Slideshow/>
      <Container/>
      <Container2/>
      <Container3/>
