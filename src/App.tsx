@@ -45,7 +45,7 @@ const App: React.FC = () => {
      <Container3/>
      <Container4/>
      <Footer/>
-     <ImageUpload/>
+     {/* <ImageUpload/> */}
     </div>
   );
 };
