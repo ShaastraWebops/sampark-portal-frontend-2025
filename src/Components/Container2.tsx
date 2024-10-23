@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import bullet from '../assets/check.svg'
 gsap.registerPlugin(ScrollTrigger);
 const Container2: React.FC = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
