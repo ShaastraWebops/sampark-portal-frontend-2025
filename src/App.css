@@ -3,7 +3,9 @@
   background-color: #ffffff;
   position: relative;
 }
-
+.listyings {
+  list-style-image: url('./assets/check.svg');
+}
 .wave-container::before {   
   content: "";
   width: 100%;
