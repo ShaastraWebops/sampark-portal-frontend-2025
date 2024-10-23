@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Subhead from './Components/Subhead';
+import Container_1 from './Components/Container_1';
 import Container from './Components/Container';
 import Container2 from './Components/Container2';
 import Container3 from './Components/Container3';
@@ -39,8 +40,9 @@ const App: React.FC = () => {
       <Navbar/>
      <Home/>
      <Subhead/>
-     <Slideshow/>
-     <Container/>
+     {/* <Slideshow/> */}
+     <Container_1/>
+     {/* <Container/> */}
      <Container2/>
      <Container3/>
      <Container4/>
