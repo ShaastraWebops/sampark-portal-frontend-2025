@@ -14,26 +14,29 @@ const ImageUpload = () => {
 
   const handleUpload = async () => {
     if (!file) return;
-    
+
     setUploading(true);
 
     const s3Client = new S3({
-      region: "blr1", 
-      endpoint: "https://blr1.digitaloceanspaces.com", 
+      region: "blr1",
+      endpoint: "https://blr1.digitaloceanspaces.com",
       credentials: {
-        accessKeyId: import.meta.env.VITE_ACCESS_KEY_ID || "DO00JMAAK77Y3LJLFLAD",
-        secretAccessKey: import.meta.env.VITE_SECRET_ACCESS_KEY || "/VgFwR4MRkbJHQLk0ttVOD9M8G4V8JUGHqO4kuXL7do",
+        accessKeyId:
+          import.meta.env.VITE_ACCESS_KEY_ID || "DO00JMAAK77Y3LJLFLAD",
+        secretAccessKey:
+          import.meta.env.VITE_SECRET_ACCESS_KEY ||
+          "/VgFwR4MRkbJHQLk0ttVOD9M8G4V8JUGHqO4kuXL7do",
       },
     });
 
-    const fileKey = `uploads/${file.name}`; 
+    const fileKey = `uploads/${file.name}`;
     try {
       const command = new PutObjectCommand({
-        Bucket: "sampark-2025", 
+        Bucket: "sampark-2025",
         Key: fileKey,
         Body: file,
         ContentType: file.type,
-        ACL: "public-read", 
+        ACL: "public-read",
       });
       await s3Client.send(command);
       const fileUrl = `https://sampark-2025.blr1.digitaloceanspaces.com/${fileKey}`;
@@ -58,7 +61,11 @@ const ImageUpload = () => {
           <a href={imageUrl} target="_blank" rel="noopener noreferrer">
             {imageUrl}
           </a>
-          <img src={imageUrl} alt="Uploaded" style={{ width: '300px', marginTop: '20px' }} />
+          <img
+            src={imageUrl}
+            alt="Uploaded"
+            style={{ width: "300px", marginTop: "20px" }}
+          />
         </div>
       )}
     </div>

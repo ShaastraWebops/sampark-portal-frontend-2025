@@ -54,9 +54,6 @@
 //         ))}
 //       </div>
 
-      
-      
-
 //       {/* Dots for navigation */}
 //       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
 //         {slides.map((_, index) => (
@@ -72,7 +69,7 @@
 // };
 
 // export default Slideshow;
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface ImageSlide {
   url: string;
@@ -105,7 +102,9 @@ const Slideshow: React.FC = () => {
           <img
             key={index}
             src={slide.url}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
             alt={`Slide ${index}`}
           />
         ))}
@@ -117,7 +116,9 @@ const Slideshow: React.FC = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+            className={`w-2 h-2 rounded-full ${
+              index === currentIndex ? "bg-gray-800" : "bg-gray-400"
+            }`}
           ></button>
         ))}
       </div>
