@@ -3,7 +3,7 @@ import React from 'react';
 
 const Icons = () => {
   return (
-    <div className="fixed bottom-6 right-6 grid grid-cols-2 gap-2 bg-black opacity-40 hover:opacity-90 rounded-3xl">
+    <div className="fixed bottom-6 right-6 hidden md:grid grid-cols-2 gap-2 bg-black opacity-40 hover:opacity-90 rounded-3xl">
      
       <button className="p-1 text-white rounded-full shadow-lg hover:bg-white">
       <a href="#" aria-label="Facebook" className="hover:text-blue-500 transition-colors duration-300"onClick={() =>
