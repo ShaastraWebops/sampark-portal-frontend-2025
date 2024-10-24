@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <div className="flex flex-col w-full items-center text-center">       
         <h1
           data-heading={heading}
-          className="relative text-5xl md:text-8xl uppercase font-normal m-0"
+          className="relative text-4xl md:text-8xl uppercase font-normal m-0"
         >
           <span
             data-heading={heading}
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
             Get Ahead Of<br/>The Competition
           </span>
         </h1>
-        <div className="border h-1/12 w-1/12 mt-6 rounded-full border-black p-2 hidden md:block">
+        <div className="border h-1/12 w-1/12 mt-6 rounded-full border-black p-2">
           <div className='animate-bounceTwice'>
             <a className='hover:cursor-pointer' onClick={() => scrollToSection('subhead')}>
               <img className="arrow" src={arrow} alt="arrow" />

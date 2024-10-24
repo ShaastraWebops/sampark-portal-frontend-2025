@@ -36,6 +36,7 @@ Empower your voice and Lead the way!<br/><br/>
         <li>Premium Shaastra merchandise and goodies for CAs</li>
         <li>Upskill workshops for CAs</li>
         <li>Earn Shaastra Credits in the Shaastra Grand Championship and use them in Shaastra-2024</li>
+        <li>To know more visit <a className='text-none' href='https://ca.shaastra.org/'>https://ca.shaastra.org/</a></li>
         </ol>
         <h2 className="text-xl md:text-3xl font-bold mt-6">Roles and Responsibilities</h2>
         <ol className="listyings m-5 text-lg md:text-2xl md:leading-10 font-semibold leading-7">
