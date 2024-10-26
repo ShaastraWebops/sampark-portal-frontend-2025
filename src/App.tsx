@@ -11,6 +11,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Slideshow from "./Components/Slideshow.tsx";
+import Icons from "./Components/icons.tsx";
 gsap.registerPlugin(ScrollTrigger);
 const App: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -44,6 +45,7 @@ const App: React.FC = () => {
       <Container3 />
       <Container4 />
       <Footer />
+      <Icons/>
       {/* <ImageUpload/> */}
     </div>
   );
