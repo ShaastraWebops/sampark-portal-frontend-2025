@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`flex justify-between w-full h-24 lg:h-28 font-bold bg-[#0a1128] sticky top-0 opacity-80 z-10 transition-transform duration-300 ${showNavbar ? '' : 'transform -translate-y-full'}`}>
-      <div className="h-full pt-2 w-full justify-center lg:w-2/12 flex">
+      <div className="h-full w-full justify-center lg:w-2/12 flex">
         <img src={logo} className="mt-1 h-full w-2/6 lg:w-5/6" alt="Shaastra Logo" />
       </div>
       <div className="-mt-2 text-3xl w-3/5 justify-between items-center h-full hidden lg:flex mr-12 text-slate-200">
