@@ -17,7 +17,6 @@ const App: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const element = sectionRef.current;
-
     gsap.fromTo(
       element,
       { opacity: 0, y: 50 },
