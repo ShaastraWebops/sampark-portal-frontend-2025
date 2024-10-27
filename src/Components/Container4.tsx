@@ -37,20 +37,15 @@ const Container4: React.FC = () => {
         </h2>
         <h2 className="text-xl md:text-3xl font-bold">Why CA?</h2>
         <ol className="listyings m-5 text-lg md:text-2xl md:leading-10 leading-7 font-semibold">
-          <li>Sponsored internships for the top 30 CAs.</li>
-          <li>
-            Internship certificates to CAs crossing specific threshold points
-          </li>
-          <li>Premium Shaastra merchandise and goodies for CAs</li>
-          <li>Upskill workshops for CAs</li>
-          <li>
-            Earn Shaastra Credits in the Shaastra Grand Championship and use
-            them in Shaastra-2024
-          </li>
+        <li>Sponsored internships for the top 30 CAs.</li>
+        <li>Internship certificates to CAs crossing specific threshold points</li>
+        <li>Premium Shaastra merchandise and goodies for CAs</li>
+        <li>Upskill workshops for CAs</li>
+        <li>Earn Shaastra Credits in the Shaastra Grand Championship and use them in Shaastra-2024</li>
+        <li>To know more visit <a className='text-none' href='https://ca.shaastra.org/'>https://ca.shaastra.org/</a></li>
         </ol>
-        <h2 className="text-xl md:text-3xl font-bold mt-6">
-          Roles and Responsibilities
-        </h2>
+        <div className='w-full'><a href='https://ca.shaastra.org/'><button className="text-lg md:text-2xl rounded-full hover:bg-blue-500 mt-3 bg-blue-400 p-2 font-bold">Know More</button></a></div>
+        <h2 className="text-xl md:text-3xl font-bold mt-6">Roles and Responsibilities</h2>
         <ol className="listyings m-5 text-lg md:text-2xl md:leading-10 font-semibold leading-7">
           <li>You will be THE FACE OF SHAASTRA on your campus</li>
           <li>

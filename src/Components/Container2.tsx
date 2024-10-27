@@ -28,20 +28,13 @@ const Container2: React.FC = () => {
       <div className="w-full md:w-5/6 mb-4" ref={sectionRef}>
         <h2 className="text-2xl md:text-4xl font-bold">Why Attend Sampark?</h2>
         <ol className="listyings m-5 text-lg md:text-2xl md:leading-10 leading-7 font-semibold">
-          <li>Learn from the best and brightest minds in technology.</li>
-          <li>Participate in exciting events and competitions.</li>
-          <li>Get hands-on experience with the latest technologies.</li>
-          <li>Network with other students and professionals in the field.</li>
-          <li>
-            Workshops and events on the latest technologies, such as Prompt
-            engineering, NLPs, LLPs and many more…
-          </li>
-        </ol>
-        <button className="text-lg md:text-2xl rounded-lg hover:bg-blue-500 mt-3 bg-blue-400 p-2 font-bold">
-          Register Now
-        </button>
-      </div>
-    </div>
-  );
-};
+        <li>Learn from the best and brightest minds in technology.</li>
+        <li>Participate in exciting events and competitions.</li>
+        <li>Get hands-on experience with the latest technologies.</li>
+        <li>Network with other students and professionals in the field.</li>
+        <li>Workshops and events on the latest technologies, such as Prompt engineering, NLPs, LLPs and many more…</li>
+        </ol> </div>
+        <div className='w-full flex justify-center'><button className="text-lg md:text-2xl rounded-full hover:bg-blue-500 mt-3 bg-blue-400 p-2 font-bold">Register Now</button></div>
+   </div>)
+}
 export default Container2;
