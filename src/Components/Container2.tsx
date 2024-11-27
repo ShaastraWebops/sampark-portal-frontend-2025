@@ -34,7 +34,7 @@ const Container2: React.FC = () => {
         <li>Network with other students and professionals in the field.</li>
         <li>Workshops and events on the latest technologies, such as Prompt engineering, NLPs, LLPs and many more…</li>
         </ol> </div>
-        <div className='w-full flex justify-center'>z
+        <div className='w-full flex justify-center'>
   <a href="https://forms.gle/81RyPibSAk8uajkJA" className="text-lg md:text-2xl rounded-full hover:bg-blue-500 mt-3 bg-blue-400 p-2 font-bold">
     <button>Register Now</button>
   </a>
