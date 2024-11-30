@@ -1,4 +1,3 @@
-// Icons.tsx
 const Icons = () => {
   return (
     <div className="fixed bottom-6 right-6 hidden md:grid grid-cols-2 gap-2 bg-black opacity-40 hover:opacity-90 rounded-3xl">
